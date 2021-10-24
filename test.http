@@ -1,0 +1,31 @@
+GET http://localhost:3000/movies HTTP/1.1
+
+
+###
+GET http://localhost:3000/movies/search HTTP/1.1
+
+id="1"
+
+
+###
+POST http://localhost:3000/movies 
+Content-Type: application/json
+
+{
+"title":"영화1",
+"year":2020,
+"genres":["스릴러", "미스터리"],
+"desc":"스릴러는 재밌지만 무섭습니다!"
+}
+
+
+
+
+###
+PUT http://localhost:3000/movies/12
+Content-Type: application/json
+
+{
+    "name" : "영화1",
+    "desc" : "좋은 영화다"
+}

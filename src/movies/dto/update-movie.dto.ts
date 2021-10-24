@@ -1,6 +1,9 @@
 import { IsNumber, IsString } from "class-validator";
+import { PartialType } from "@nestjs/mapped-types";
+import { fromEventPattern } from "rxjs"; 
 
-export class createMovieDto{
+
+export class updateMovieDto{
     @IsString()
     readonly title : string;
     @IsNumber()
